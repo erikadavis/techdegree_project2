@@ -4,29 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intital-scale=1.0">
    
-    <title>Responsive Web Page Code Along with CodeNewbie</title>
+    <title>Responsive Web Page</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <script src="script.js"></script>
-    <header>
+   
+    <header class="top-header">
+      <h2 class="my-name">Student Name</h2>
+      <nav>
       
-      <nav class="main-nav">
         <ul class="main-ul">
-          <li class="my-name">Student Name<li>
           <li><a href="#about">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      
     </header>
+    
 
     <section id="about">
       <div class="intro-text">
         <p>Greetings From Sunny Florida! My name is Erika and I am a front-end web developer. Creating responsive web designs using HTML, CSS, and Flexbox are one of the ways I have learned to make simple webpages that can be viewed easily on any device or computer. I recently finished learning about CSS and Flexbox at Treehouse and I am excited to put my skills to use in this project!</p>
       </div>
-      <div class="profile-img"></div>
+      <div class="profile-img">
+        <img src="images/responsive-layout-profile.png" alt="Picture of profile image icon">
+      </div>
     </section>
+
     <section id="portfolio">
       <div class="portfolio-area">
       <h1>Portfolio</h1>
@@ -64,6 +70,7 @@
       </ul>
       </div>
     </section>
+    
     <section id="contact">
       <footer class="contact-info">
         <h1>Contact</h1>
