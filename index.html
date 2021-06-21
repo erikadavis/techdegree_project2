@@ -26,7 +26,7 @@
 
     <section id="about">
       <div class="intro-text">
-        <p>Greetings From Sunny Florida! My name is Erika and I am a front-end web developer. Creating responsive web designs using HTML, CSS, and Flexbox are one of the ways I have learned to make simple webpages that can be viewed easily on any device or computer. I recently finished learning about CSS and Flexbox at Treehouse and I am excited to put my skills to use in this project!</p>
+        <p class="top-p">Greetings From Sunny Florida! My name is Erika and I am a front-end web developer. Creating responsive web designs using HTML, CSS, and Flexbox are one of the ways I have learned to make simple webpages that can be viewed easily on any device or computer. I recently finished learning about CSS and Flexbox at Treehouse and I am excited to put my skills to use in this project!</p>
       </div>
       <div class="profile-img">
         <img src="images/responsive-layout-profile.png" alt="Picture of profile image icon">
@@ -34,40 +34,45 @@
     </section>
 
     <section id="portfolio">
-      <div class="portfolio-area">
       <h1>Portfolio</h1>
-      <ul class="portfolio-content">
-        <li>
+      <div class="portfolio-row-1">
+      <div class="portfolio-col-1">
+        
           <img src="/images/portfolio-1.png" alt="Marketing icon" class="portfolio-1">
-          <h3>Marketing Page: We Have What You Need!</h3>
+          <h4>Marketing Page: We Have What You Need!</h4>
           <p>This project is an example page of a marketing website that I created for a milkshake and ice cream business.</p>
-        </li>
-        <li>
+      </div>
+        <div class="portfolio-col-2">
           <img src="/images/portfolio-2.png" alt="Search Page icon" class="portfolio-2">
-          <h3>Search Page: What Are You Looking For?</h3>
+          <h4>Search Page: What Are You Looking For?</h4>
           <p>This project searches a database to locate information based on user input.</p>
-        </li>
-        <li>
+        </div>
+        <div class="portfolio-col-3">
         <img src="/images/portfolio-3.png" alt="Travel App icon" class="portfolio-3">
-          <h3>Travel App: Where Would You Like to Go?</h3>
+          <h4>Travel App: Where Would You Like to Go?</h4>
           <p>This project compares travel times based on different forms of transportation and provides the shortest route.</p>
-        </li>
-        <li>
+        </div>
+      
+      <!--<div class="portfolio-row-2">-->
+     
+        <div class="portfolio-col-4">
         <img src="/images/portfolio-4.png" alt="Map of Favorite Spots icon" class="portfolio-4">
-          <h3>Map of Favorite Spots: Take a Walking Tour through the City</h3>
+          <h4>Map of Favorite Spots: Take a Walking Tour through the City</h4>
           <p>This project uses mapping APIs to plot points of popular places in the city.</p>
-        </li>
-        <li>
+        </div>
+      
+      
+        <div class="portfolio-col-5">
         <img src="/images/portfolio-5.png" alt="Photo gallery icon" class="portfolio-5">
-          <h3>Photo Gallery: Memories on Display</h3>
+          <h4>Photo Gallery: Memories on Display</h4>
           <p>This project displays travel pictures to the viewer and provides effortless navigation.</p>
-        </li>
-        <li>
+        </div>
+        <div class="portfolio-col-6">
         <img src="/images/portfolio-6.png" alt="Calculator icon" class="portfolio-6">
-          <h3>Calculator: Simple and Accurate </h3>
+          <h4>Calculator: Simple and Accurate </h4>
           <p>This project allows users to perform simple calculations like addition and subtration.</p>
-        </li>
-      </ul>
+        </div>
+      </div>
       </div>
     </section>
     
@@ -79,13 +84,19 @@
         <p>Email: reachme@email.com</p>
       </footer>
       <footer class="bottom-nav">
+        <h2 class="bottom-name">Student Name</h2>
         <nav>
-        <ul>
+        <ul class="bottom-ul">
           <li><a href="#about">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       </footer>
+      <footer class="hidden">
+      <a href="#about">Back To Top</a>
+      </footer>
+      
+      
   </body>
 </html>
