@@ -9,11 +9,15 @@ body {
   padding: 0 20px;
   
 }
-.my-name {
-  margin: 0;
-}
-.main-ul, .portfolio-content {
+.my-name, 
+.bottom-name {
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main-ul, 
+.bottom-ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
   list-style: none;
 }
 .my-name,
@@ -22,17 +26,51 @@ body {
   display: block;
   padding: 10px 15px;
 }
-.main-ul a {
+
+.main-ul a,
+.bottom-ul a,
+.hidden a {
   text-decoration: none;
 }
-/*
-#about {
+.bottom-ul a {
+  padding: 10px 15px;
+}
+
+
+
+h1 {
+  text-align: center;
+  margin: 1.5em;
+}
+ h4 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+.top-p {
+  text-align: justify;
+}
+
+p {
+  margin: 1.5em;
   text-align: center;
 }
-*/
+
 img {
   max-width: 100%;
 }
+
+
+  .portfolio-col-1,
+  .portfolio-col-2,
+  .portfolio-col-3,
+  .portfolio-col-4,
+  .portfolio-col-5,
+  .portfolio-col-6 {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
 
 
@@ -49,27 +87,73 @@ img {
   }
 }
 
+@media (min-width: 320px) {
+
+  
+ 
+  .bottom-ul {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .top-header,
   .main-ul,
-  #about {
+  #about,
+  .portfolio-row-1,
+  .bottom-nav,
+  .bottom-ul
+  
+  
+    {
     display: flex;
   }
 
-.top-header {
+.top-header
+ {
   flex-direction: column;
   align-items: center;
   }
-  
+  .bottom-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hidden {
+    display: none;
+  }
   .intro-text,
   .profile-img {
     flex: 2;
   }
+
+  .portfolio-col-1,
+  .portfolio-col-2,
+  .portfolio-col-3,
+  .portfolio-col-4,
+  .portfolio-col-5,
+  .portfolio-col-6 {
+    flex: 1 50%;
+  }
+
+  .portfolio-row-1
+  
+   {
+    flex-wrap: wrap;
+    
+  }
+
 }
 
 
 @media (min-width: 1024px) {
-  .top-header {
+  .bottom-nav,
+  .bottom-ul,
+  .bottom-ul a {
+    display: flex;
+  }
+  .top-header,
+  .bottom-nav,
+  .bottom-ul,
+  .bottom-ul a {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -78,4 +162,20 @@ img {
     flex: 1;
     
   }
+
+  .portfolio-col-1,
+  .portfolio-col-2,
+  .portfolio-col-3 {
+    flex: 1 31%;
+  }
+  .portfolio-col-4,
+  .portfolio-col-5,
+  .portfolio-col-6 {
+    flex: 1;
+  }
+
+  .hidden  {
+    display: none;
+  }
+  
 }
